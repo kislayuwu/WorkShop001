@@ -16,15 +16,25 @@ public class Main {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
 
-        //edit using person's name
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the first name of contact to edit contact");
+
+        //edit using person's name
+      System.out.println("Enter the first name of contact to edit contact");
         String edit=sc.next();
         s1.setValues(p1);
         a1.contactList.put(edit,p1);
         for (Map.Entry<String, Person> entry : a1.contactList.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
+
+        //delete using first name
+        System.out.println("Enter the first name of contact to delete contact");
+        String delete=sc.next();
+        s1.delete(delete,a1);
+        for (Map.Entry<String, Person> entry : a1.contactList.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+
 
     }
 }

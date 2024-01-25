@@ -32,4 +32,8 @@ public class Service {
         int zip = sc.nextInt();
         p.setZip(zip);
     }
+
+    public void delete(String firstName,AddressBook a1) {
+        a1.contactList.remove(firstName);
+    }
 }
