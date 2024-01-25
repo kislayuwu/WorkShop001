@@ -33,6 +33,10 @@ public class Service {
         p.setZip(zip);
     }
 
+    public void edit(String firstName,AddressBook a1,Person p){
+        setValues(p);
+        a1.contactList.put(firstName,p);
+    }
     public void delete(String firstName,AddressBook a1) {
         a1.contactList.remove(firstName);
     }
