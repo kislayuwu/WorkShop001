@@ -62,4 +62,17 @@ public class Person {
     public void setZip(java.lang.Integer zip) {
         this.zip = zip;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", email='" + email + '\'' +
+                ", phNo=" + phNo +
+                ", zip=" + zip +
+                '}';
+    }
 }
